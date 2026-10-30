@@ -52,7 +52,7 @@ export default function Footer() {
         <div><p className="label eyebrow">A good idea starts with good questions</p><h2 id="questions-title" className="display">Still curious?</h2></div>
         <div className="faq-list">
           <details><summary>How would Zap Band work?</summary><p>The proposal is to use adjustable electrical pulses in a wearable alarm, rather than a loud sound. Wristband and patch formats are being explored. The final design and operating specifications have not been established.</p></details>
-          <details><summary>Is this a real product I can buy?</summary><p>Not yet. Zap Band is a student venture concept. The image is an AI-generated design mockup, and the demo only illustrates a possible interface. Pricing and a launch date have not been set.</p></details>
+          <details><summary>Is this a real product I can buy?</summary><p>Not yet. Zap Band is a student venture concept. The image is an AI-generated design mockup, and the demo only illustrates a possible interface. The planned device price is $99.99 USD; a launch date has not been set. <a className="text-link" href="pricing.html">Explore pricing ↗</a></p></details>
           <details><summary>Has safety or effectiveness been proven?</summary><p>No. Safety, comfortable wear and reliable waking are goals that need qualified assessment and testing. This website does not demonstrate those properties or replace your existing alarm.</p></details>
           <details><summary>What is the next step?</summary><p>Learn from real consumers about their waking routines, compare wearable concepts, and investigate whether the idea is practical. Feedback from the classroom AI simulation is exploratory, not evidence of real customer demand.</p></details>
         </div>
@@ -60,7 +60,7 @@ export default function Footer() {
       <div className="footer-rule" />
       <div className="footer-columns">
         <div className="footer-brand"><span className="brand-dot" aria-hidden="true" /><span className="display">zap / band</span><p>Your morning. Their peace.<br />A quieter start, imagined.</p></div>
-        <div><h3 className="label">Explore</h3><a href="#demo">Try the demo</a><a href="#questions">Questions and answers</a></div>
+        <div><h3 className="label">Explore</h3><a href="pricing.html">Pricing · $99.99 USD</a><a href="#demo">Try the demo</a><a href="#questions">Questions and answers</a></div>
         <div><h3 className="label">Behind the concept</h3><a href="https://andrewvalentino-creator.github.io/my-first-webpage/">Meet Andrew ↗</a><a href="#overview" onClick={e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }); history.replaceState(null, '', '#overview') }}>Back to top ↑</a></div>
       </div>
       <div className="legal-bar"><span>Zap Band · A Fairfield University student venture concept.</span><span>Concept imagery. No product sales or medical claims.</span></div>

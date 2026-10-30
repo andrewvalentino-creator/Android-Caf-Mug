@@ -78,6 +78,11 @@ export default function App() {
   }
   useEffect(() => {
     const target = NAV.find(n => n.hash === window.location.hash)
+    if (['#demo', '#questions'].includes(window.location.hash)) {
+      const id = window.location.hash.slice(1)
+      const raf = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: 'instant' }))
+      return () => cancelAnimationFrame(raf)
+    }
     if (!target || !wrap.current) return
     const raf = requestAnimationFrame(() => {
       const root = wrap.current!
@@ -119,7 +124,7 @@ export default function App() {
             <nav aria-label="Main navigation" className="nav-links">
               {NAV.map((n, i) => <a className="label" key={n.hash} href={n.hash} aria-current={i === active ? 'location' : undefined} onClick={e => { e.preventDefault(); navigate(n.hash, n.p) }}>{n.label}</a>)}
             </nav>
-            <a className="nav-buy label" href="#demo">Try the demo <span aria-hidden="true">↗</span></a>
+            <a className="nav-buy label" href="pricing.html">Pricing <span aria-hidden="true">↗</span></a>
           </header>
           <div className="artboard" style={{ width: stageW, height: stageH, transform: `scale(${scale})` }}>
             <div className="backdrop-type display" aria-hidden="true" style={{ ...box(mobile ? -30 : 168, mobile ? 370 : 90), fontSize: mobile ? 138 : 300 }}>ZAP BAND</div>
@@ -139,7 +144,7 @@ export default function App() {
               {['An alarm meant for you. Not the whole room.', 'Explore a wearable concept using adjustable', 'electrical pulses instead of a loud sound.'].map((line, i) => <Mask key={line} t={span(copyP, [P.body1, P.body2, P.body3][i])} style={box(0, (mobile ? 166 : 230) + i * (mobile ? 21 : 25), mobile ? 342 : 470, 30)}><p style={{ margin: 0, fontSize: mobile ? 13.5 : 16, lineHeight: 1.5, color: 'rgba(255,255,255,0.7)' }}>{line}</p></Mask>)}
               <div className="hero-actions" style={{ ...box(0, mobile ? 510 : 348), opacity: span(copyP, P.body3) }}>
                 <a href="#demo" className="button button-primary">Try the concept <span aria-hidden="true">↗</span></a>
-                <a href="#details" className="button button-ghost" onClick={e => { e.preventDefault(); navigate('#details', 0.7) }}>Explore <span aria-hidden="true">↓</span></a>
+                <a href="pricing.html" className="button button-ghost">View pricing <span aria-hidden="true">↗</span></a>
               </div>
               <p className="merchant-note" style={{ ...box(0, mobile ? 568 : 412), opacity: span(copyP, P.body3) }}>Design mockup. Safety and effectiveness not yet validated.</p>
               <aside className="glass capacity-card" aria-label="Example wake time" style={{ ...box(mobile ? 0 : groupW - 390, mobile ? 590 : 410, mobile ? 342 : 390, mobile ? 72 : 156), opacity: reduced ? 1 : span(Math.max(p, intro * 4), P.stat) }}>
