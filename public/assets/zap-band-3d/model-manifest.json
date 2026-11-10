@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "venture-3d-handoff/1.0",
+  "version": 2,
+  "projectName": "Zap Band",
+  "modelName": "Zap Band — refined rounded module",
+  "modelType": "Physical product",
+  "confirmationTimestamp": "2026-11-06T19:55:53.869Z",
+  "dimensions": {
+    "width": 66.9,
+    "height": 26,
+    "depth": 56.05,
+    "units": "mm"
+  },
+  "modelUnits": "meters",
+  "coordinateSystem": {
+    "up": "+Y",
+    "front": "+Z"
+  },
+  "preferredCamera": {
+    "position": [
+      104.77795534233694,
+      75.50546765485616,
+      140.00889735037018
+    ],
+    "target": [
+      0,
+      -0.16750009238719965,
+      0.30495689392089886
+    ],
+    "projection": "perspective",
+    "zoom": 1,
+    "units": "mm"
+  },
+  "preferredBackground": "#e8edeb",
+  "preferredLighting": "soft",
+  "description": "Slim Zap Band with flush side-attached silicone bracelet, graphite removable module, three alarms, battery and color-coded lightning gauge, two underside contacts and USB-C.",
+  "hotspots": [
+    {
+      "name": "Silicone wrist loop",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "units": "mm"
+    },
+    {
+      "name": "Removable module",
+      "position": [
+        0,
+        0,
+        29
+      ],
+      "units": "mm"
+    },
+    {
+      "name": "Black glass bezel",
+      "position": [
+        0,
+        0,
+        31.65
+      ],
+      "units": "mm"
+    },
+    {
+      "name": "Three alarms · battery · zap gauge",
+      "position": [
+        0,
+        0,
+        32.21
+      ],
+      "units": "mm"
+    },
+    {
+      "name": "USB-C port",
+      "position": [
+        0,
+        -12.81,
+        29
+      ],
+      "units": "mm"
+    },
+    {
+      "name": "Left underside contact",
+      "position": [
+        -16,
+        0,
+        26.35
+      ],
+      "units": "mm"
+    },
+    {
+      "name": "Right underside contact",
+      "position": [
+        16,
+        0,
+        26.35
+      ],
+      "units": "mm"
+    }
+  ],
+  "files": {
+    "model": "model.glb",
+    "project": "project.json",
+    "preview": "preview.png",
+    "readme": "README.txt"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "file": "model.glb",
+    "checksum": "353d12b7ad06956e93783b964a5db62807aa408235d78a2a1f1c13f14377d2eb"
+  },
+  "revisionAuthorization": "User requested a slimmer, rounded model closer to the concept image and smartwatch proportions on 2026-11-06.",
+  "revisionStatus": "approved-for-website",
+  "sourceConfirmationTimestamp": "2026-11-03T23:55:36.503Z",
+  "draftTimestamp": "2026-11-06T19:39:45.273Z"
+}

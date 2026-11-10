@@ -16,7 +16,7 @@ function Pricing() {
       <section className="pricing-hero" aria-labelledby="pricing-title">
         <div className="pricing-intro"><p className="label eyebrow">A personal start to the day</p><h1 id="pricing-title" className="display">Your morning.<br /><span>Your band.</span></h1><p>A wearable alarm concept for people who share their space, but not their schedule.</p></div>
         <div className="pricing-product">
-          <figure><img src={PRODUCT.photo} alt="AI-generated graphite Zap Band design mockup with a blue indicator; not a working prototype." width="1500" height="1500" fetchPriority="high" /><figcaption>Design concept · Final form may change</figcaption></figure>
+          <figure><img src={PRODUCT.photo} alt="Confirmed Zap Band 3D concept with its three-alarm display, battery indicator and color-coded lightning gauge." width="1500" height="1500" fetchPriority="high" /><figcaption>Design concept · Final form may change</figcaption></figure>
           <article className="pricing-card" aria-labelledby="band-title">
             <span className="product-badge label"><span /> In development</span>
             <h2 id="band-title" className="display">Zap Band</h2>
